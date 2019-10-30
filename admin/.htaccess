@@ -1,0 +1,42 @@
+# Deny access to .htaccess
+<Files .htaccess>
+Order allow,deny
+Deny from all
+</Files>
+
+IndexIgnore *
+
+RewriteEngine on
+
+# Rewrite /foo/bar to /foo/bar.php
+RewriteRule ^admin?$ /osyts/admin/welcome_admin.php [L]
+RewriteRule ^active-brgy-admin?$ /osyts/admin/active_brgy_admin.php [L]
+RewriteRule ^change-brgy-admin-password?$ /osyts/admin/change_brgy_admin_password.php [L]
+RewriteRule ^update-brgy-admin-password?$ /osyts/admin/update_brgy_admin_password.php [L]
+RewriteRule ^insert-brgy-user?$ /osyts/admin/insert_brgy_user.php [L]
+RewriteRule ^add-brgy-user?$ /osyts/admin/add_brgy_user.php [L]
+
+
+
+
+
+
+RewriteRule ^update-password?$ /osyts/admin/update_password.php [L]
+RewriteRule ^active-subscribers?$ /osyts/admin/active_subscriber.php [L]
+RewriteRule ^expired-subscribers?$ /osyts/admin/expired_subscriber.php [L]
+RewriteRule ^all-subscribers?$ /osyts/admin/all_subscriber.php [L]
+RewriteRule ^add-member-subscriber?$ /osyts/admin/add_member_user.php [L]
+RewriteRule ^insert-member-subscriber?$ /osyts/admin/insert_member_user.php [L]
+RewriteRule ^edit-member-subscription?$ /osyts/admin/edit_member_subscription.php [L]
+RewriteRule ^update-member-subscription?$ /osyts/admin/update_member_subscription.php [L]
+RewriteRule ^change-member-password?$ /osyts/admin/change_member_password.php [L]
+RewriteRule ^update-member-password?$ /osyts/admin/update_member_password.php [L]
+RewriteRule ^member-pigeons?$ /osyts/admin/member_pigeons.php [L]
+RewriteRule ^list-color?$ /osyts/admin/list_color.php [L]
+RewriteRule ^list-status?$ /osyts/admin/list_status.php [L]
+RewriteRule ^list-barangay?$ /osyts/admin/list_barangay.php [L]
+RewriteRule ^active-club?$ /osyts/admin/active_club_subscriber.php [L]
+RewriteRule ^expired-club?$ /osyts/admin/expired_club_subscriber.php [L]
+RewriteRule ^edit-club-admin-subscription?$ /osyts/admin/edit_club_admin_subscription.php [L]
+RewriteRule ^update-club-admin-subscription?$ /osyts/admin/update_club_admin_subscription.php [L]
+RewriteRule ^expired-brgy-admin?$ /osyts/admin/expired_club_admin.php [L]

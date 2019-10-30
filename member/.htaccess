@@ -1,0 +1,68 @@
+# Deny access to .htaccess
+<Files .htaccess>
+Order allow,deny
+Deny from all
+</Files>
+
+IndexIgnore *
+
+RewriteEngine on
+
+# Rewrite /foo/bar to /foo/bar.php
+RewriteRule ^member?$ /pigeondb/member/welcome_member.php [L]
+RewriteRule ^password_update?$ /pigeondb/member/update_password.php [L]
+RewriteRule ^edit-profile?$ /pigeondb/member/edit_profile.php [L]
+RewriteRule ^active?$ /pigeondb/member/active_pigeons.php [L]
+RewriteRule ^cock?$ /pigeondb/member/active_cocks.php [L]
+RewriteRule ^hen?$ /pigeondb/member/active_hens.php [L]
+RewriteRule ^ungender?$ /pigeondb/member/active_ungender.php [L]
+RewriteRule ^archive?$ /pigeondb/member/archive_pigeons.php [L]
+RewriteRule ^add-pigeon?$ /pigeondb/member/add_pigeon.php [L]
+RewriteRule ^insert-pigeon?$ /pigeondb/member/insert_pigeon.php [L]
+RewriteRule ^view-active-pigeon?$ /pigeondb/member/view_pigeon.php [L]
+RewriteRule ^edit-pigeon?$ /pigeondb/member/edit_pigeon.php [L]
+RewriteRule ^update-pigeon?$ /pigeondb/member/update_pigeon.php [L]
+RewriteRule ^view-archive-pigeon?$ /pigeondb/member/view_archive_pigeon.php [L]
+RewriteRule ^edit-archive-pigeon?$ /pigeondb/member/edit_archive_pigeon.php [L]
+RewriteRule ^update-archive-pigeon?$ /pigeondb/member/update_archive_pigeon.php [L]
+RewriteRule ^active-progeny?$ /pigeondb/member/active_progeny.php [L]
+RewriteRule ^add-achievement?$ /pigeondb/member/add_achievement.php [L]
+RewriteRule ^list-achievement?$ /pigeondb/member/list_achievement.php [L]
+RewriteRule ^view-achievement?$ /pigeondb/member/view_achievement.php [L]
+RewriteRule ^list-achievement-2?$ /pigeondb/member/list_achievement_active.php [L]
+RewriteRule ^achievements?$ /pigeondb/member/achievements.php [L]
+RewriteRule ^view-achievement-2?$ /pigeondb/member/view_achievement_2.php [L]
+RewriteRule ^pedigree?$ /pigeondb/member/pedigree_pdf.php [L]
+RewriteRule ^add-training?$ /pigeondb/member/add_training.php [L]
+RewriteRule ^insert-training?$ /pigeondb/member/insert_training.php [L]
+RewriteRule ^list-training?$ /pigeondb/member/list_training.php [L]
+RewriteRule ^list-training-entries?$ /pigeondb/member/list_training_entries.php [L]
+RewriteRule ^clock?$ /pigeondb/member/clock.php [L]
+RewriteRule ^training-result?$ /pigeondb/member/training_result.php [L]
+RewriteRule ^auto-entry?$ /pigeondb/member/auto_training_entries.php [L]
+RewriteRule ^rfid-clock?$ /pigeondb/member/rfid_clock.php [L]
+RewriteRule ^indiv-training-result?$ /pigeondb/member/indiv_training_result.php [L]
+RewriteRule ^add-event?$ /pigeondb/member/add_event.php [L]
+RewriteRule ^insert-event?$ /pigeondb/member/insert_event.php [L]
+RewriteRule ^lost-and-found?$ /pigeondb/member/lost_found.php [L]
+RewriteRule ^my-lost-and-found?$ /pigeondb/member/my_lost_found.php [L]
+RewriteRule ^insert-lost-found?$ /pigeondb/member/insert_lost_found.php [L]
+RewriteRule ^my-for-sale?$ /pigeondb/member/my_for_sale.php [L]
+RewriteRule ^insert-for-sale?$ /pigeondb/member/insert_for_sale.php [L]
+RewriteRule ^for-sale?$ /pigeondb/member/for_sale.php [L]
+RewriteRule ^clubs?$ /pigeondb/member/clubs.php [L]
+RewriteRule ^insert-joined-club?$ /pigeondb/member/insert_joined_club.php [L]
+RewriteRule ^unlink-club?$ /pigeondb/member/unlink_club.php [L]
+RewriteRule ^view-linked-club?$ /pigeondb/member/view_joined_club.php [L]
+RewriteRule ^list-race?$ /pigeondb/member/list_race.php [L]
+RewriteRule ^list-race-entries?$ /pigeondb/member/list_race_entries.php [L]
+RewriteRule ^rfid-race-clock?$ /pigeondb/member/rfid_race_clock.php [L]
+RewriteRule ^race-result?$ /pigeondb/member/race_result.php [L]
+RewriteRule ^view-list-race-entries?$ /pigeondb/member/view_list_race_entries.php [L]
+RewriteRule ^view-member-schedule?$ /pigeondb/member/view_member_schedule.php [L]
+
+RewriteRule ^list-other-race?$ /pigeondb/member/list_other_race.php [L]
+RewriteRule ^list-other-race-entries?$ /pigeondb/member/list_other_race_entries.php [L]
+RewriteRule ^view-list-other-race-entries?$ /pigeondb/member/view_list_other_race_entries.php [L]
+RewriteRule ^other-race-result?$ /pigeondb/member/other_race_result.php [L]
+RewriteRule ^rfid-other-race-clock?$ /pigeondb/member/rfid_other_race_clock.php [L]

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Out-Of-School-Youth Tracking System</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/form-elements.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+             
+    </head>
+
+    <body>
+
+<nav class="navbar navbar-inverse" style="position: absolute; width: 100%;">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="">Out-Of-School-Youth Tracking System</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">  
+
+      <ul class="nav navbar-nav navbar-right">   
+        <li><a href="#myModal" class="trigger-btn" data-toggle="modal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<br>
+
+
+<!-- Modal HTML -->
+<div id="myModal" class="modal fade">
+    <div style="color: #636363; width: 350px;" class="modal-dialog modal-login">
+        <div class="modal-content" style="padding: 20px; border-radius: 5px; border: none;">
+            <div class="modal-header" style="border-bottom: none; position: relative; justify-content: center;">              
+                <h4 style="text-align: center; font-size: 26px;" class="modal-title">Member Login</h4>
+                <button style="position: absolute;top: -5px; right: -5px;" type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form action="login.php" method="post">
+                    <div class="form-group" style="position: relative;">
+                        <i style="position: absolute; left: 13px; top: 11px; font-size: 18px;" class="fa fa-user"></i>
+                        <input style="padding-left: 40px" type="text" class="form-control" placeholder="Username" required="required" name="username">
+                    </div>
+                    <div class="form-group" style="position: relative;">
+                        <i style="position: absolute; left: 13px; top: 11px; font-size: 18px;" class="fa fa-lock"></i>
+                        <input style="padding-left: 40px" type="password" class="form-control" placeholder="Password" required="required" name="password">                
+                    </div>
+                    <div class="form-group" style="position: relative;">
+                        <input style="min-height: 40px; border-radius: 3px;" type="submit" class="btn btn-primary btn-block btn-lg" value="Login">
+                    </div>
+                </form>             
+                
+            </div>
+            
+        </div>
+    </div>
+</div>     
+<!---------- 
+<footer class="footer-contact" style="background: black; width: 100%;">
+   
+<p>
+  
+  <i class="fa fa-envelope"></i><a href="mailto:admin_rpfo@rpfo.com.ph"> admin_rpfo@rpfo.com.ph</a> 
+  <p style="color: white;"><i class="fa fa-phone"></i>+63 943 425 3768 </p>
+</p>
+
+</footer>
+----------->
+        <!-- Javascript -->
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+        
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+
+
+    </body>
+
+</html>
+

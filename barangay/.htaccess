@@ -1,0 +1,56 @@
+# Deny access to .htaccess
+<Files .htaccess>
+Order allow,deny
+Deny from all
+</Files>
+
+IndexIgnore *
+
+RewriteEngine on
+
+# Rewrite /foo/bar to /foo/bar.php
+RewriteRule ^barangay?$ /osyts/barangay/welcome_barangay.php [L]
+RewriteRule ^edit-barangay?$ /osyts/barangay/edit_barangay.php [L]
+RewriteRule ^update-barangay?$ /osyts/barangay/update_barangay.php [L]
+RewriteRule ^upload-barangay-logo?$ /osyts/barangay/upload_barangay_photo.php [L]
+RewriteRule ^add-barangay-member?$ /osyts/barangay/add_barangay_member.php [L]
+RewriteRule ^barangay-members?$ /osyts/barangay/barangay_members.php [L]
+RewriteRule ^barangay-members1?$ /osyts/barangay/barangay_members_1.php [L]
+RewriteRule ^insert-barangay-member?$ /osyts/barangay/insert_barangay_member.php [L]
+
+
+RewriteRule ^view-barangay-member?$ /osyts/barangay/edit_barangay_member.php [L]
+RewriteRule ^upload-member-photo?$ /osyts/barangay/upload_member_photo.php [L]
+RewriteRule ^update-password?$ /osyts/barangay/update_password.php [L]
+RewriteRule ^edit-profile?$ /osyts/barangay/edit_profile.php [L]
+RewriteRule ^update-profile?$ /osyts/barangay/update_profile.php [L]
+RewriteRule ^barangay-officers?$ /osyts/barangay/barangay_officers.php [L]
+RewriteRule ^add-barangay-officer?$ /osyts/barangay/add_barangay_officer.php [L]
+RewriteRule ^insert-barangay-officer?$ /osyts/barangay/insert_barangay_officer.php [L]
+RewriteRule ^upload-officer-photo?$ /osyts/barangay/upload_officer_photo.php [L]
+RewriteRule ^edit-barangay-officer?$ /osyts/barangay/edit_barangay_officer.php [L]
+RewriteRule ^add-event?$ /osyts/barangay/add_event.php [L]
+RewriteRule ^insert-event?$ /osyts/barangay/insert_event.php [L]
+RewriteRule ^view-schedule?$ /osyts/barangay/view_barangay_schedule.php [L]
+RewriteRule ^linked-members$ /osyts/barangay/linked_members.php [L]
+RewriteRule ^add-race$ /osyts/barangay/add_race.php [L]
+RewriteRule ^insert-race$ /osyts/barangay/insert_race.php [L]
+RewriteRule ^list-race$ /osyts/barangay/list_race.php [L]
+RewriteRule ^list-race-entries$ /osyts/barangay/list_race_entries.php [L]
+RewriteRule ^race-categories$ /osyts/barangay/race_category.php [L]
+RewriteRule ^add-category$ /osyts/barangay/add_category.php [L]
+RewriteRule ^insert-category$ /osyts/barangay/insert_category.php [L]
+RewriteRule ^barangay-rings$ /osyts/barangay/barangay_rings.php [L]
+RewriteRule ^insert-barangay-ring$ /osyts/barangay/insert_barangay_ring.php [L]
+RewriteRule ^member-barangay-rings$ /osyts/barangay/member_barangay_rings.php [L]
+RewriteRule ^delete-indiv-ring$ /osyts/barangay/delete_indiv_ring.php [L]
+RewriteRule ^insert-race-entries-mem$ /osyts/barangay/insert_race_entries_mem.php [L]
+RewriteRule ^race-result$ /osyts/barangay/race_result.php [L]
+RewriteRule ^view-list-race-entries$ /osyts/barangay/view_list_race_entries.php [L]
+RewriteRule ^add-other-race$ /osyts/barangay/add_other_race.php [L]
+RewriteRule ^list-other-race$ /osyts/barangay/list_other_race.php [L]
+RewriteRule ^insert-other-race$ /osyts/barangay/insert_other_race.php [L]
+RewriteRule ^list-other-race-entries$ /osyts/barangay/list_other_race_entries.php [L]
+RewriteRule ^view-list-other-race-entries$ /osyts/barangay/view_list_other_race_entries.php [L]
+RewriteRule ^other-race-result$ /osyts/barangay/other_race_result.php [L]
+RewriteRule ^insert-other-race-entries-mem$ /osyts/barangay/insert_other_race_entries_mem.php [L]
