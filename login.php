@@ -51,5 +51,6 @@
       }
       
    }
-   header("refresh:0; url=/osyts")
+   header("refresh:0; url=/oscaytrass");
+
 ?>
